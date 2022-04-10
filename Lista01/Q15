@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+  float salario = 0.0;
+  int dias = 0;
+  printf("Digite quantos dias o funcionário trabalhou: \n");
+  scanf("%d", &dias);
+  if (20 > dias > 10) {
+    salario = (dias * 52.25) - (dias * 52.25*10)/100;
+    salario += (salario*20)/100; 
+  }
+  if (dias >= 20) {
+    salario = (dias * 52.25) - (dias * 52.25*10)/100;
+    salario = salario + (salario*30)/100; 
+  }
+  printf("O salário total que o funcionário deve receber: %.2f", salario);
+  return 0;
+}
