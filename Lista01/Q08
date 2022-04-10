@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+  int n = 0;
+  printf("Digite um número inteiro: \n");
+  scanf("%d", &n);
+  printf("O quadrado desse número é %d", n*n);
+  return 0;
+}
