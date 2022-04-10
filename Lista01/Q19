@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+  float r, resultado = 0.0;
+  printf("MEDIDAS DE UM CÍRCULO\n");
+  printf("Digite o valor do raio do círculo: ");
+  scanf("%f", &r);
+  printf("Sua área: %f\n", resultado = 3.14159*r*r);
+  printf("Seu diâmetro: %f\n", resultado = 2*r);
+  printf("Seu perímetro: %f\n", resultado = 2*3.14159*r);
+  return 0;
+}
