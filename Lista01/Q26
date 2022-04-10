@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+  int x1,x2,y1,y2 = 0;
+  float d = 0.0;
+  printf("---Distância entre dois pontos---\n");
+  printf("Digite o valor do X primeiro ponto: ");
+  scanf("%d", &x1);
+  printf("Digite o valor do Y primeiro ponto: ");
+  scanf("%d", &x2);
+  printf("Digite o valor do X primeiro ponto: ");
+  scanf("%d", &y1);
+  printf("Digite o valor do Y primeiro ponto: ");
+  scanf("%d", &y2);
+  
+  printf("A distância entre os dois pontos será: %.2f", d = (float) sqrt(pow((x2 - x1),2) + pow((y2 - y1),2)));
+  
+  
+  return 0;
+}
