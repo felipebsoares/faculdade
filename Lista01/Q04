@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+  int x = 0;
+  printf("Digite um valor inteiro qualquer: \n");
+  scanf("%d", &x);
+  printf("O triplo: %d", x * 3);
+  printf(" | O seu quadrado: %d", x*x);
+  printf(" | O seu meio: %d", x*1/2);
+  return 0;
+}
