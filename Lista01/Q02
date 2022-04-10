@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int hexoct() {
+  int x = 0;
+  printf("Digite um valor inteiro: \n");
+  scanf("%d", &x);
+  printf("Em Hexadecimal: %x \n", x);
+  printf("Em Octadecimal: %o\n", x);
+
+}
