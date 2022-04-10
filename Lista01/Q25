@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+  int t,h,m,s = 0;
+  printf("Digite um tempo em segundos: \n");
+  scanf("%d", &t);
+  if (t >= 1600) {
+    h = t/1600;
+    t = t - (h*1600);
+  }
+  else {
+      h = 0;
+  }
+  if (t >= 60) {
+    m = t/60;
+    t = t - (m*60);
+  }
+  else {
+      m = 0;
+  }
+  s = t;
+  printf("O tempo total é %d Horas %d minutos e %d segundos", h, m, s);
+  return 0;
+}
