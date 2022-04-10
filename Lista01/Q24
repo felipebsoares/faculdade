@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+  int x, n = 0;
+  printf("Digite um valor: \n");
+  scanf("%d", &x);
+  printf("Digite um valor para a potência de 2: \n");
+  scanf("%d", &n);
+  n = (1<<n);
+  x = x * n;
+  printf("Resultado do produto dos dois valores: %d", x);
+  
+  return 0;
+}
