@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+  int horas, minutos, segundos, tempo_total = 0;
+  printf("Informe a quantidade de horas: \n");
+  scanf("%d", &horas);
+  printf("Informe a quantidade de minutos: \n");
+  scanf("%d", &minutos);
+  printf("Informe a quantidade de segundos: \n");
+  scanf("%d", &segundos);
+  printf("O tempo total é %d em segundos", tempo_total = segundos + (minutos*60) + (horas * 3600));
+  return 0;
+}
