@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+  int n1, n2, n3 = 0;
+  float ma, mg = 0.0;
+  printf("---MÉDIA ARITMÉTICA E GEOMÉTRICA---\n");
+  printf("Digite o primeiro número: \n");
+  scanf("%d", &n1);
+  printf("Digite o segundo número: \n");
+  scanf("%d", &n2);
+  printf("Digite o terceiro número: \n");
+  scanf("%d", &n3);
+  printf("Média aritmética: %.2f\n", ma = (float) (n1 + n2 +n3)/3);
+  printf("Média geométrica: %.2f", mg = (float) pow((n1 * n2 * n3), 1/3));
+  return 0;
+}
