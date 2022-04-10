@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+  float cot,conv = 0.0;
+  printf("------CONVERSÃO REAIS -> DÓLAR------\n");
+  printf("Digite a cotação atual do dolár em reais: ");
+  scanf("%f", &cot);
+  printf("Digite a quantidadde de reais a ser convertida: ");
+  scanf("%f", &conv);
+  conv = conv*cot;
+  printf("A quantidade total convertida em dólar: $%.2f ", conv);
+  return 0;
+}
