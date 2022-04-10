@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+  float p,sb,sl,vh = 0.0;
+  int hm;
+  printf("----CALCULAR SALÁRIO DE UM PROFESSOR----\n");
+  printf("Digite o valor da hora aula: ");
+  scanf("%f", &vh);
+  printf("Digite as horas trabalhadas no mês: ");
+  scanf("%d", &hm);
+  printf("Digite o percentual de desconto do INSS: ");
+  scanf("%f", &p);
+  printf("Seu salário bruto: %f", sb = (float) vh*hm);
+  printf("Seu salário líquido: %f", sl = sb - (sb*p)/100);
+  return 0;
+}
