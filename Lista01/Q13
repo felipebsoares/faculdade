@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+  float a, b, t = 0.0;
+  
+  printf("Digite um número qualquer para a váriavel A: \n");
+  scanf("%f", &a);
+  printf("Digite um número qualquer para a váriavel B: \n");
+  scanf("%f", &b);
+  t = a;
+  a = b;
+  b = t;
+  printf("Váriavel A: %.2f\n", a);
+  printf("Váriavel B: %.2f", b);
+  
+  return 0;
+}
