@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+  int n, inverso = 0;
+  float inverso_cen, inverso_dez, inverso_u = 0.0;
+  printf("INVERTER NÚMERO COM TRÊS DIGÍTOS\n");
+  printf("Digite um número inteiro com três digítos: \n");
+  scanf("%d", &n);
+
+  inverso_cen = n/100;
+  n = n - inverso_cen*100;
+  
+  inverso_dez = n/10;
+  n = n - inverso_dez*10;
+
+  inverso_u = n;
+  
+  inverso = inverso_u*100 + inverso_dez*10 + inverso_cen;
+  printf("O inverso do número: %d", inverso);
+  return 0;
+}
