@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+  int x = 0;
+  printf("Ordem das operações\n");
+
+  x = 7 + 3*6/2-1; // primeiro a multiplicação será        feita, em seguida a divisão e por ultimo a soma de subtração
+  printf("Resultado da operação x = 7 + 3*6/2-l => %d\n", x);
+  x = 2%2 + 2*2-2/2; // primeiro serão realizadas os       operadores %, *, /. Logo após +, -.
+  printf("Resultado da operação x = 2%2 + 2*2-2/2 => %d \n", x);
+  x = (3 * 9 * (3 + (9*3/ (3) ) ) ); 
+  // Os parênteses mais internos serão priorizados, em     segundo lugar, os operadores * e /. O segundo parenteses mais interno somará 3 ao resultado da         operação anterior. Por último as operações do            parênteses mais externo serão executadas.
+  printf("Resultado da operação x = (3 * 9 * (3 + (9*3/ (3) ) ) ) => %d\n", x);
+  return 0;
+}
