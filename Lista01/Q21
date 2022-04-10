@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+  int n1,n2,i = 0;
+  printf("---MÚLTIPLO OU NÃO?---\n");
+  printf("Digite um número inteiro: \n");
+  scanf("%d", &n1);
+  printf("Digite outro número inteiro: \n");
+  scanf("%d", &n2);
+  i = (n1 % n2 == 0) ? 1 : 0;
+  switch (i) {
+    case 1:
+      printf("O primeiro número é múltiplo do segundo");
+      break;
+    case 0:
+      printf("Os números não são múltiplos");
+      break;
+  }
+  return 0;
+}
