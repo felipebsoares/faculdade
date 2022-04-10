@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+  printf("Valores inteiros de caracteres e símbolos\n");
+  printf("Valor inteiro de A: %d\n", 'A');
+  printf("Valor inteiro de B: %d\n", 'B');
+  printf("Valor inteiro de C: %d\n", 'C');
+  printf("Valor inteiro de a: %d\n", 'a');
+  printf("Valor inteiro de b: %d\n", 'b');
+  printf("Valor inteiro de c: %d\n", 'c');
+  printf("Valor inteiro de C: %d\n", 'C');
+  printf("Valor inteiro de 0: %d\n", '0');
+  printf("Valor inteiro de 1: %d\n", '1');
+  printf("Valor inteiro de 2: %d\n", '2');
+  printf("Valor inteiro de $: %d\n", '$');
+  printf("Valor inteiro de *: %d\n", '*');
+  printf("Valor inteiro de +: %d\n", '+');
+  printf("Valor inteiro de /: %d\n", '/');
+  printf("Valor inteiro de um espaço vazio: %d\n", ' ');
+  return 0;
+}
