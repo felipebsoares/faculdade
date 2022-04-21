@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main()
+{
+    int dia;
+    printf("Digite um número de 1 a 7: \n");
+    scanf("%d", &dia);
+    
+    switch(dia) {
+        case 1:
+            printf("Este número representa o domingo na semana");
+        break;
+        case 2:
+            printf("Este número representa a segunda na semana");
+        break;
+        case 3:
+            printf("Este número representa a terça na semana");
+        break;
+        case 4:
+            printf("Este número representa a quarta na semana");
+        break;
+        case 5:
+            printf("Este número representa a quinta na semana");
+        break;
+        case 6:
+            printf("Este número representa a sexta na semana");
+        break;
+        case 7:
+            printf("Este número representa o sábado na semana");
+        break;
+        default:
+            printf("O número digitado não é válido!");
+        break;
+    }
+    return 0;
+    
+}
