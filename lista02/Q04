@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int J = 150;
+    int P = 110;
+    int anos = 0;
+    while (J > P) {
+        J = J + 2;
+        P = P + 3;
+        anos = anos + 1;
+        
+    }
+    printf("Pedro será maior que josé em %d anos", anos);
+    return 0;
+}
