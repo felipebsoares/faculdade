@@ -1,0 +1,24 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int i, a, b = 0;
+    int c, r = 0;
+    puts("---SOMATÓRIO DOS NÚMEROS ANALISADOS--");
+    puts("Defina o primeiro valor da faixa de números a serem analisados: ");
+    scanf("%d", &a);
+    puts("Defina o segundo valor da faixa de números a serem analisados: ");
+    scanf("%d", &b);
+    if (a > b) {
+        c = a;
+        a = b;
+        b = c;
+    }
+    for (i = a; i <= b; i++) {
+        r = r + i;
+    }
+    printf("O somatório da faixa de números apresentada: %d", r);
+    
+    return 0;
+}
