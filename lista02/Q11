@@ -1,0 +1,26 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int i, a, b, c;
+    puts("---Quadrados dos números multiplos de 4---");
+    puts("Defina o primeiro valor da faixa de números a serem analisados: ");
+    scanf("%d", &a);
+    puts("Defina o segundo valor da faixa de números a serem analisados: ");
+    scanf("%d", &b);
+    if (a > b) {
+        c = a;
+        a = b;
+        b = c;
+    }
+    for (i = a; i < b; i++) {
+        if ( i % 4 == 0) {
+            printf("%d ", i*i);
+        }
+    }
+        
+        
+    
+    return 0;
+}
