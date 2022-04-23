@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int i, f = 0;
+    for (i = 0; i <= 100; i += 10) {
+            printf("Quantidade em celsius: %d\n", i);
+            printf("Quantidade em Fahrenheit: %d\n", f = (i * 9/5) + 32);
+    }
+    return 0;
+}
