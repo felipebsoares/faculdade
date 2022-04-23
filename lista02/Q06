@@ -1,0 +1,52 @@
+
+#include <stdio.h>
+int votation (int control) {
+    int voto;
+    puts("-------Votação para presidente-------");
+    puts("Digite [5] para votar em Paulo");
+    puts("Digite [7] para votar em Renata");
+    puts("Digite [0] para votar branco ");
+    puts("Digite um número negativo para sair");
+    scanf("%d", &voto); 
+    return voto;
+}
+int main()
+{
+    int control, c = 0;
+    int certeza, paulo, renata, branco;
+    do {
+        control = votation(control);
+        printf("%d", control);
+        puts("Tem certeza de seu voto? (1 para sim/0 para não)");
+        scanf("%d", &certeza);
+        
+        switch (control) {
+            case 0:
+                branco = branco + 1;
+                printf("Existem %d votos em branco", branco);
+            case 5:
+                paulo = paulo + 1;
+                printf("Paulo tem %d votos\n", paulo);
+            case 7:
+                renata = renata + 1;
+                printf("Paulo tem %d votos\n", renata);
+            
+        }
+        c = c + 1;
+    }while (control > 0);
+    
+    if (renata > paulo) {
+            renata = renata + branco;
+            
+        }
+    else if (renata == paulo) {
+        printf("Houve um empate, haverá mais um turno de votações");
+        control = votation(control);
+    }
+    else {
+        paulo = paulo + branco;
+    }
+    printf("Paulo teve um total de %d %% de votos", (paulo*100)/c);
+    printf("Renata teve um total de %d %% de votos", (renata*100)/c);
+    return 0;
+}
