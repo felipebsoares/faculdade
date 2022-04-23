@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+    int i, c = 0;
+    int a, b, qt = 0;
+    int soma = 0;
+    float media = 0.0;
+    puts("---Calcular média aritmética---");
+    puts("Defina o primeiro valor da faixa de números a serem analisados: ");
+    scanf("%d", &a);
+    puts("Defina o segundo valor da faixa de números a serem analisados: ");
+    scanf("%d", &b);
+    if (a > b) {
+        c = a;
+        a = b;
+        b = c;
+    }
+    qt = b - a;
+    for (i = a; i < b; i++) {
+        soma = soma + i;
+    }
+    printf("%d %d",soma,qt);
+    printf("A média da faixa dos números digitados é %.2f", media = (float)soma/qt);
+    return 0;
+}
