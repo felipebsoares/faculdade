@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int i;
+    puts("---Quadrados dos números multiplos de 4, de 15 a 90---");
+    for (i = 15; i <= 90; i++) {
+        if ( i % 4 == 0) {
+            printf("%d ", i*i);
+        }
+    }
+        
+        
+    
+    return 0;
+}
