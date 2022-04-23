@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int i;
+    long int soma = 0;
+    long int g = 1;
+    for (i = 0; i < 60; i++) {
+        soma += g;
+        g = g*2;
+            
+    }
+    printf("A quantidade de grãos é %ld", soma);
+    return 0;
+}
