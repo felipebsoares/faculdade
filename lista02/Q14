@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int i, a, b, c;
+    puts("---Quantidade de números divisíveis por 3---");
+    puts("Defina o primeiro valor da faixa de números a serem analisados: ");
+    scanf("%d", &a);
+    puts("Defina o segundo valor da faixa de números a serem analisados: ");
+    scanf("%d", &b);
+    if (a > b) {
+        c = a;
+        a = b;
+        b = c;
+    }
+    c = 0; //reutilizando a variavel para contagem
+    for (i = a; i < b; i++) {
+        if ( i % 3 == 0) {
+            c += 1;
+        }
+    }
+    printf("A quantidade de números divisíveis por 3 nessa faixa é %d", c);
+        
+    
+    return 0;
+}
