@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int i, expoente = 0;
+    r = 3;
+    puts("---Potencias aleatórias de 3---");
+    expoente = rand() % 7;
+    
+    printf("3 elevado a %d", expoente);
+    for (i = 0; i < expoente; i++) {
+        r = r * 3;
+    }
+    printf("O resultado: %d", r);
+    
+    return 0;
+}
