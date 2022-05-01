@@ -1,0 +1,27 @@
+
+#include <stdio.h>
+
+int main()
+{
+    float menor, maior = 0;
+    float vetor[15];
+    for (int i= 0; i < 5; i++) {
+        printf("Forneça o %dº valor: ", i+1);
+        scanf("%f", &vetor[i]);
+        if (i == 0) {
+            maior = vetor[i];
+            menor = vetor[i];
+        }
+        if (maior < vetor[i]) {
+            maior = vetor[i];
+        }
+        else if (menor > vetor[i]) {
+            menor = vetor[i];
+        }
+    }
+    printf("Maior valor fornecido: %.2f\n", maior);
+    printf("Menor valor fornecido: %.2f\n", menor);
+    printf("Soma do maior e menor valor fornecido: %.2f\n", maior + menor);
+    
+    return 0;
+}
