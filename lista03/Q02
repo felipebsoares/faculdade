@@ -1,0 +1,24 @@
+
+#include <stdio.h>
+
+int main()
+{
+    
+    char caractere[1];
+    char string[15];
+    printf("Digite um caractere(Para verificar se ele está presente no nome): ");
+    scanf("%s", caractere);
+    printf("Digite um nome: ");
+    scanf("%s", string);
+    char *count = strpbrk(caractere, string);
+    
+
+    if (count != NULL) {
+        printf("O caractere está presente na string!");
+    }
+    else {
+        puts("O caractere não está presente na string!");
+    }
+
+    return 0;
+}
