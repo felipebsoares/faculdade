@@ -1,0 +1,22 @@
+
+#include <stdio.h>
+#define A 100
+int main()
+{
+    
+    char string1[A], string2[A];
+    puts("Digite uma palavra: ");
+    scanf("%s", string1);
+    puts("Digite outra palavra: ");
+    scanf("%s", string2);
+    int result = strcmp(string1, string2);
+    if (result == 0) {
+        puts("As duas strings são iguais");
+    }
+    else {
+        printf("As strings são diferentes")
+    }
+    
+    
+    return 0;
+}
