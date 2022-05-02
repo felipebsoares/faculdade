@@ -1,0 +1,15 @@
+
+#include <stdio.h>
+
+int main()
+{
+    char string[100];
+    int qtcaracteres = 0;
+    puts("Digite uma palavra");
+    scanf("%s", string);
+    while (string[qtcaracteres] != '\0') {
+        qtcaracteres++;
+    }
+    printf("Há %d caracteres na string digitada.", qtcaracteres);
+    return 0;
+}
