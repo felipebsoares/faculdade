@@ -1,0 +1,25 @@
+
+#include <stdio.h>
+void troca (int *p, int *q)
+{
+   int temp;
+   temp = *p; *p = *q; *q = temp;
+}
+
+int main()
+{
+    int a, b;
+    int *p, *q;
+    p = &a; q = &b;
+    a = 10;
+    b = 20;
+
+    printf("Valor de A: %d ", *p);
+    printf("Valor de B: %d\n", *q);
+    troca(p,q);
+    
+    printf("Valor de A: %d ", a);
+    printf("Valor de B: %d", b);
+    
+    return 0;
+}
