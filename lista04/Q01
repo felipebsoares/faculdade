@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void) {
+  int a = 10;
+  int b = 10;
+  printf("valor de a: %d\n", a);
+  printf("valor de b: %d\n", b);
+  int *ponteiroA = &a;
+  int *ponteiroB = &b;
+  printf("valor da soma: %d\n", *ponteiroA + *ponteiroB);
+  
+  return 0;
+}
