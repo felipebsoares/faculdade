@@ -1,0 +1,35 @@
+/*Escreva um programa em C que gere um vetor com n ́umeros aleat ́orios e calcule sua m ́edia. Orga-
+nize uma Estrutura com as seguintes informa ̧c ̃oes: ponteiro para a matriz, quantidade de elementos
+
+e a m ́edia.*/
+
+
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+typedef struct {
+
+    int *pData;
+    int QtdElementos;
+    float media;
+}Matriz;
+
+int main() {
+    Matriz matriz;
+    int i = 0;
+    srand(time(NULL));
+
+    puts("Digite a quantidade de elementos do vetor a ser gerado: \n");
+    scanf("%d", &matriz.QtdElementos);
+
+    matriz.pData = malloc(matriz.QtdElementos * sizeof(int));
+    for(i = 0; i <= matriz.QtdElementos; i++) {
+        *(matriz.pData + i) = rand() % 100;
+    }
+    for(i = 0; i <= matriz.QtdElementos; i++) {
+        printf("[ %d ]", *(matriz.pData + i));
+        matriz.media += *(matriz.pData + i);
+    }
+    printf("Media:  %.2f", matriz.media);
+    return 0;
+}
